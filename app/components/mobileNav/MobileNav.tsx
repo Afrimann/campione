@@ -2,14 +2,14 @@ import styles from './mobilenav.module.css'
 import { FaTimes } from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import {motion} from 'framer-motion'
 interface Props {
   closeMobileNav: () => void
 }
 // mobile navigation bar. To show when hamburger is clicked
 export default function MobileNav ({ closeMobileNav }: Props) {
   return (
-    <div className={styles.mobilenav}>
+    <motion.div initial={{opacity: 0, x: 100}} whileInView={{opacity: 1, x: 0}} viewport={{once: true}} className={styles.mobilenav}>
       <div onClick={closeMobileNav}>
         <FaTimes
           color='#ffffff'
@@ -47,6 +47,6 @@ export default function MobileNav ({ closeMobileNav }: Props) {
           </Link>
         </ul>
       </nav>
-    </div>
+    </motion.div>
   )
 }
