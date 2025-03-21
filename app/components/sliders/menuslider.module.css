@@ -1,0 +1,73 @@
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.imageWrapper {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  /* Allow horizontal scrolling */
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE and Edge */
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  /* Add some spacing */
+  white-space: nowrap;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.imageWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.imageContainer {
+  flex: 0 0 auto;
+  width: 400px;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  /* Ensure images maintain aspect ratio */
+  border-radius: 8px;
+  /* Optional: Adds rounded corners */
+}
+
+.navButton {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 0%;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navButton:nth-of-type(1) {
+  left: 10px;
+  /* Adjusted */
+}
+
+.navButton:nth-of-type(2) {
+  right: 10px;
+  /* Adjusted */
+}
+
+.navButton:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

@@ -5,47 +5,47 @@ type Image = {
 }
 export const GalleryImages:Image[] = [
        {
-              src: '/imag3.avif',
+              src: '/rest5.jpg',
               alt: '',
               width: 400
        },
        {
-              src: '/imag2.avif', 
+              src: '/rest6.jpg', 
               alt: '',
               width: 400
        },
        {
-              src: '/imag5.avif',
+              src: '/rest7.jpg',
               alt: '',
               width: 400
        },
        {
-              src: '/image1.avif',
+              src: '/rest2.jpg',
               alt: '',
               width: 400
        },
        {
-              src: '/image4.avif',
+              src: '/rest3.jpg',
               alt: '',
               width: 400
        },
        {
-              src: '/imag3.avif',
+              src: '/rest4.jpg',
               alt: '',
               width: 400
        },
        {
-              src: '/imag2.avif',
+              src: '/rest5.jpg',
               alt: '',
               width: 400
        },
        {
-              src: '/imag5.avif',
+              src: '/rest6.jpg',
               alt: '',
               width: 400
        },
        {
-              src: '/image1.avif',
+              src: '/rest7.jpg',
               alt: '',
               width: 400
        },

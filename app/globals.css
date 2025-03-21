@@ -10,10 +10,12 @@
   /* font sizes */
   --font-sm: 12px;
   --font-md: 14px;
+  --font-p: 16px;
   --font-lg: 22px;
   --font-xl: 26px;
   --font-mxl: 40px;
   --font-2xl: 52px;
+  --font-extralg: 72px;
 
 }
 /* @media (prefers-color-scheme: dark) {

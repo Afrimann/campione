@@ -36,19 +36,19 @@ export default function MobileNav ({ closeMobileNav }: Props) {
         </div>
 
         <ul className={styles.nav_items}>
-          <Link href='/'>
+          <Link href='/' onClick={closeMobileNav}>
             <li>Home</li>
           </Link>
-          <Link href='/'>
+          <Link href='/menu/' onClick={closeMobileNav}>
             <li>Menu</li>
           </Link>
-          <Link href='/'>
+          <Link href='/' onClick={closeMobileNav}>
             <li>Info</li>
           </Link>
-          <Link href='/'>
+          <Link href='/' onClick={closeMobileNav}>
             <li>About</li>
           </Link>
-          <Link href='/'>
+          <Link href='/' onClick={closeMobileNav}>
             <li>Events</li>
           </Link>
         </ul>

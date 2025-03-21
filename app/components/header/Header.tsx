@@ -25,7 +25,6 @@ export default function Header () {
             width={250}
             height={70}
             className={styles.logo_image}
-            //    layout="responsive"
           />
         </div>
         <div className={styles.menubar} onClick={openMobileNav}>
@@ -33,12 +32,12 @@ export default function Header () {
         </div>
         <div className={styles.nav_items}>
           <div>
-            <Link href=''>
+            <Link href='/'>
               <li>Home</li>
             </Link>
           </div>
           <div>
-            <Link href=''>
+            <Link href='/menu/'>
               <li>Menu</li>
             </Link>
           </div>
