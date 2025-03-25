@@ -11,6 +11,10 @@
   max-height: 90vh;
   object-fit: contain;
   padding: 0 40px;
+  transition: .2s ease-in;
+}
+.fullImage:hover{
+  opacity: .5;
 }
 
 .navButton{

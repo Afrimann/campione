@@ -32,8 +32,11 @@
   height: 500px;
   object-fit: cover;
   border-radius: 8px;
+  transition: .2s ease-in;
 }
-
+.image:hover{
+  opacity: .5;
+}
 .navButton {
   background: rgba(0, 0, 0, 0.6);
   color: white;
@@ -45,7 +48,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* z-index: 10; */
+  z-index: 1;
 }
 
 .navButton:first-of-type {

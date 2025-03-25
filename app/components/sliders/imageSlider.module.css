@@ -66,3 +66,11 @@
 .navButton:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+
+@media screen and (max-width: 450px) {
+  .image{
+    /* width: 300px; */
+    height: 400px;
+  }
+}

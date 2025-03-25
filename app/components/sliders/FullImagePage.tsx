@@ -5,7 +5,8 @@ import Image from 'next/image'
 import styles from './fullimage.module.css'
 import { EventImages } from '@/constants'
 
-export default function FullImagePage() {
+
+export default function FullImagePage () {
   const router = useRouter()
   const { imageId } = useParams() // Get image index from URL
   const currentIndex = parseInt(imageId as string, 10)
@@ -16,7 +17,8 @@ export default function FullImagePage() {
   }
 
   const prevImage = () => {
-    const prevIndex = (currentIndex - 1 + EventImages.length) % EventImages.length
+    const prevIndex =
+      (currentIndex - 1 + EventImages.length) % EventImages.length
     router.push(`/event/${prevIndex}`)
   }
 
@@ -27,13 +29,13 @@ export default function FullImagePage() {
       </button>
 
       <div>
-      <Image
-        src={EventImages[currentIndex].src}
-        alt={EventImages[currentIndex].alt}
-        width={EventImages[currentIndex].width}
-        height={600}
-        className={styles.fullImage}
-      />
+        <Image
+          src={EventImages[currentIndex].src}
+          alt={EventImages[currentIndex].alt}
+          width={EventImages[currentIndex].width}
+          height={600}
+          className={styles.fullImage}
+        />
       </div>
 
       <button className={styles.navButton} onClick={nextImage}>

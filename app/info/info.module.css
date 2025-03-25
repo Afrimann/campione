@@ -20,7 +20,7 @@
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  padding: 0;
+  padding: 80px;
   margin: 0;
   align-items: center;
   justify-content: center;
@@ -107,23 +107,42 @@
 }
 
 @media screen and (max-width:900px) {
+
   .infoWrapper {
     grid-template-columns: 1fr;
     padding: 70px;
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 450px) {
   .infoWrapper {
     grid-template-columns: 1fr;
-    padding: 100px;
+    padding: 15px; /* Reduce padding */
   }
-  
+
   .infoImage {
-    padding: 70px;
+    padding: 10px; /* Reduce padding */
+    max-width: 100%;
+    overflow: hidden;
   }
-  
+  .image{
+    width: 300px;
+    height: 400px;
+  }
   .infoContent {
-    padding: 70px;
+    padding: 10px; /* Reduce padding */
+  }
+
+  .infoContent > div:nth-of-type(1) > div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .infoContent > div > div p,
+  .infoContent > div > div span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 }
+

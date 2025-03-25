@@ -41,6 +41,7 @@ export default function EventSlider () {
               className={styles.image}
             />
           </div>
+          
         ))}
       </div>
 
