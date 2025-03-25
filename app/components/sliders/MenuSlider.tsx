@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import styles from './menuslider.module.css'
 import { useRef } from 'react'
+import { useRouter } from 'next/navigation'
 
-const images = [
+export const images = [
   '/food.jpg',
   '/food2.jpg',
   '/food3.jpg',
@@ -28,6 +29,7 @@ export default function MenuSlider () {
       })
     }
   }
+  const router = useRouter()
 
   return (
     <div className={styles.sliderContainer}>
@@ -44,6 +46,7 @@ export default function MenuSlider () {
               width={400}
               height={500}
               className={styles.image}
+              onClick={() => router.push(`/menu/${index}`)}
             />
           </div>
         ))}

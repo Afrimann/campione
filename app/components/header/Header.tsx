@@ -52,12 +52,12 @@ export default function Header () {
               </Link>
             </div>
             <div>
-              <Link href=''>
+              <Link href='/about/'>
                 <li>About</li>
               </Link>
             </div>
             <div>
-              <Link href=''>
+              <Link href='/event/'>
                 <li>Events</li>
               </Link>
             </div>

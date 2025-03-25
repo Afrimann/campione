@@ -3,50 +3,98 @@ type Image = {
   alt: string
   width: number
 }
-export const GalleryImages:Image[] = [
-       {
-              src: '/food2.jpg',
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food3.jpg', 
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food3.jpg',
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food2.jpg',
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food3.jpg',
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food3.jpg',
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food2.jpg',
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food3.jpg',
-              alt: '',
-              width: 400
-       },
-       {
-              src: '/food2.jpg',
-              alt: '',
-              width: 400
-       },
+export const GalleryImages: Image[] = [
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  }
+]
+
+export const EventImages: Image[] = [
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food3.jpg',
+    alt: '',
+    width: 400
+  },
+  {
+    src: '/food2.jpg',
+    alt: '',
+    width: 400
+  }
 ]

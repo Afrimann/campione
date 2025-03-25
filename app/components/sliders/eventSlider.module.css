@@ -1,0 +1,57 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageSlider {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.imageSlider::-webkit-scrollbar {
+  display: none;
+}
+
+.imageWrapper {
+  flex: 0 0 auto;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+.image {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.navButton {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* z-index: 10; */
+}
+
+.navButton:first-of-type {
+  left: 10px;
+}
+
+.navButton:last-of-type {
+  right: 10px;
+}
