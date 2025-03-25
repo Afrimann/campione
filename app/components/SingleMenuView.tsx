@@ -9,7 +9,7 @@ export default function SingleMenuView () {
   const router = useRouter()
   // retrieve slug from url
   const { menuId } = useParams()
-  const currentIndex = parseInt(menuId as string, 10)
+  const currentIndex = parseInt(menuId as string, 11)
 
   const nextMenu = () => {
     const nextIndex = (currentIndex + 1) % GalleryImages.length

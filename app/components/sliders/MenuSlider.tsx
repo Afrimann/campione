@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './menuslider.module.css'
 import { useRef } from 'react'
 import { useRouter } from 'next/navigation'
+import { GalleryImages } from '@/constants'
 
 export const images = [
   '/food.jpg',
@@ -38,10 +39,10 @@ export default function MenuSlider () {
       </button>
 
       <div className={styles.imageWrapper} ref={sliderRef}>
-        {images.map((src, index) => (
+        {GalleryImages.map((src, index) => (
           <div key={index} className={styles.imageContainer}>
             <Image
-              src={src}
+              src={src.src}
               alt={`Menu ${index + 1}`}
               width={400}
               height={500}
