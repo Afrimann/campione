@@ -6,7 +6,7 @@ import Image from 'next/image'
 import styles from './eventSlider.module.css'
 import { EventImages } from '@/constants'
 
-export default function EventSlider() {
+export default function EventSlider () {
   const sliderRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 
@@ -33,7 +33,13 @@ export default function EventSlider() {
             className={styles.imageWrapper}
             onClick={() => router.push(`/event/${index}`)} // Navigate to full image page
           >
-            <Image src={image.src} alt={image.alt} width={image.width} height={500} className={styles.image} />
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={500}
+              className={styles.image}
+            />
           </div>
         ))}
       </div>

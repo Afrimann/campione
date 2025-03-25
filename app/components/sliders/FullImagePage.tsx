@@ -26,6 +26,7 @@ export default function FullImagePage() {
         {'<'}
       </button>
 
+      <div>
       <Image
         src={EventImages[currentIndex].src}
         alt={EventImages[currentIndex].alt}
@@ -33,6 +34,7 @@ export default function FullImagePage() {
         height={600}
         className={styles.fullImage}
       />
+      </div>
 
       <button className={styles.navButton} onClick={nextImage}>
         {'>'}

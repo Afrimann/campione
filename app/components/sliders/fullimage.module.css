@@ -10,9 +10,10 @@
 .fullImage {
   max-height: 90vh;
   object-fit: contain;
+  padding: 0 40px;
 }
 
-.navButton {
+.navButton{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
