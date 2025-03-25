@@ -2,6 +2,8 @@
 import MenuContent from '../components/MenuContent'
 import MenuSlider from '../components/sliders/MenuSlider'
 import styles from './menu.module.css'
+import Link from 'next/link'
+
 //the default menu page
 export default function Menu () {
   return (
@@ -12,14 +14,14 @@ export default function Menu () {
         </div>
         <div className={styles.gridbtns}>
           <div className={styles.upper}>
-            <button>dinner</button>
-            <button>take out</button>
-            <button>brunch</button>
-            <button>family style</button>
+            <button><Link href='/menu/dinner'>dinner</Link></button>
+            <button><Link href='/menu/take-out'>take out</Link></button>
+            <button><Link href='/menu/brunch'>brunch</Link></button>
+            <button><Link href='/menu/family-style'>family style</Link></button>
           </div>
           <div className={styles.lower}>
             {' '}
-            <button>wine</button>
+            <button><Link href='/menu/wine'>wine</Link></button>
           </div>
         </div>
 

@@ -42,7 +42,7 @@ export default function MobileNav ({ closeMobileNav }: Props) {
           <Link href='/menu/' onClick={closeMobileNav}>
             <li>Menu</li>
           </Link>
-          <Link href='/' onClick={closeMobileNav}>
+          <Link href='/info/' onClick={closeMobileNav}>
             <li>Info</li>
           </Link>
           <Link href='/' onClick={closeMobileNav}>

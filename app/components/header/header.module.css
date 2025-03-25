@@ -71,3 +71,27 @@
     cursor: pointer;
   }
 }
+
+
+/* MENU DROPDOWN */
+.dropdown{
+  position: relative;
+}
+.menu_dropdown{
+  position: absolute;
+  top: 25;
+  height: auto;
+  padding: 15px 30px;
+  width: 150px;
+  background-color: var(--background);
+  border-radius: 10px;
+}
+.menu_dropdown ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu_dropdown .menuList{
+  font-size: var(--font-sm);
+}
