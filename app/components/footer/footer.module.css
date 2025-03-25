@@ -20,6 +20,8 @@
 .footer_content p{
   text-align: center;
   color: white;
+  font-size: var(--font-p);
+  font-family: 'Inter';
 }
 
 .footer_content :nth-child(2){
@@ -28,6 +30,7 @@
 .footer_content span{
   text-decoration: underline;
   color: yellow;
+  font-family: 'Inter';
 }
 @media screen and (max-width:600px) {
   .footer {
